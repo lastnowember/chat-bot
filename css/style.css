@@ -1,0 +1,93 @@
+.chat-wrapper {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 270px;
+	height: 400px;
+	background-color: #009688;
+	color: white;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 5px;
+}
+
+.chat-header {
+	width: 270px;
+	height: 40px;
+	padding: 5px;
+	margin: 5px 0px;
+}
+
+.chat-header img {
+	margin-top: -10px;
+	margin-left: -5px;
+	float: left;
+	border: 1px solid #009688;
+	border-radius: 50%;
+}
+
+.bot-status {
+	position: absolute;
+	top: 47px;
+	left: 40px;
+	content: " ";
+	z-index: 10;
+	width:10px;
+	height: 10px;
+	background-color: #24c621;
+	border-radius: 50%;
+}
+
+.chat-header .chat-name {
+	float: left;
+	padding-left: 10px;
+}
+
+.chat-name .bot-name {
+	font-weight: bold;
+}
+
+.chat-name .bot-description {
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+.chat-main {
+	width: 250px;
+	height: 280px;
+	background-color: #fff;
+	padding: 10px;
+}
+
+.chat-input {
+	width: 270;
+	margin: 5px 0px;
+}
+
+.chat-input form {
+	float: left;
+}
+
+.chat-input form input {
+	width: 210px;
+	padding: 5px 0px 5px 5px;
+	border: none;
+}
+
+.btn {
+	float: right;
+	display: block;
+	padding:5px 13px;
+	text-align: center;
+	text-decoration: none;
+	color: #009688;
+	background-color: #fff;
+}
+
+
+
+
+
+.clear {
+	clear: both;
+}

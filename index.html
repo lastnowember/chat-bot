@@ -2,21 +2,32 @@
 <html>
 <head>
 	<title>chat-bot</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="chat-wrapper">
 		<div class="chat-header">
-			<img src="/" alt="">
-			<span class="bot-name"></span>
-			<span class="bot-description"></span>
+			<img src="img/bot-avatar.jpg" alt="Менеджер">
+
+			<div class="chat-name">
+			<div class="bot-status"></div>
+				<span class="bot-name">Анастасия Зорина</span><br>
+				<span class="bot-description">Менеджер</span>
+				<div class="clear"></div>
+			</div>
 		</div>
+
 		<div class="chat-main">
 			
 		</div>
-		<div class="chat-input">
-			
+		<div id="chat-input" class="chat-input">
+			<form action="">
+				<input type="text" placeholder="Задайте ваш вопрос...">
+			</form>
+			<a href="#" class="btn">OK</a>
+			<div class="clear"></div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
