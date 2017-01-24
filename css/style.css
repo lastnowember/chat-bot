@@ -1,11 +1,11 @@
 .chat-wrapper {
-	position: absolute;
-	bottom: 10px;
+	position: fixed;
+	bottom: -340px;
 	right: 10px;
 	width: 270px;
-	height: 400px;
+	height: 405px;
 	background-color: #009688;
-	color: white;
+	color: #fff;
 	font-size: 1em;
 	font-weight: normal;
 	padding: 5px;
@@ -13,10 +13,21 @@
 }
 
 .chat-header {
-	width: 270px;
-	height: 40px;
-	padding: 5px;
-	margin: 5px 0px;
+	width: 260px;
+	height: 50px;
+	padding: 15px 5px 0px 5px;
+	margin: 0px 0px 5px 0px;
+	border-radius: 2px;
+}
+
+a.click-chat-header {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+ a.click-chat-header:hover {
+	background-color: #008575;
 }
 
 .chat-header img {
@@ -72,11 +83,15 @@
 
 .chat-input form input {
 	width: 210px;
+	height: 20px;
 	padding: 5px 0px 5px 5px;
 	border: none;
+	border-radius: 1px;
+	font-size: 0.9em;
 }
 
 .btn {
+	height: 20px;
 	float: right;
 	display: block;
 	padding:5px 13px;
@@ -84,6 +99,7 @@
 	text-decoration: none;
 	color: #009688;
 	background-color: #fff;
+	border-radius: 1px;
 }
 
 
