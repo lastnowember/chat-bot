@@ -17,6 +17,14 @@ $(document).ready(function(){
 		$('#chat-content').append(userBlock);
 	}
 
+	function addUserText() {
+		var userText = $('input[name="user-input"]').val();
+		addText(userText,'user');
+		$('input[name="user-input"]').val('');
+		$('#chat-input').css({'display': 'none'});
+		$('#chat-main').animate({'height': '310px'},500);
+	}
+
 	$('#click-chat-header').click(function(){
 		var chatHeaderBottom = $('#chat-wrapper').css('bottom');
 		console.log(chatHeaderBottom);
@@ -28,8 +36,7 @@ $(document).ready(function(){
 	});
 
 	$('#btn-text').click(function(){
-		var userText = $('input[name="user-input"]').val();
-		addText(userText,'user');
+		addUserText();
 	});
 
 
