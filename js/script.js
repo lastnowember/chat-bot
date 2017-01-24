@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	var textBot = ['Здравствуйте, вас интересует разработка сайтов? Я могу проконсультировать','Консультация абсолютно бесплатная. Задавайте ваш вопрос'];
+
 	function sideChat(side){
 		$('#chat-wrapper').animate({'bottom':side}, 1000);
 	}
@@ -11,8 +13,8 @@ $(document).ready(function(){
 		} else {
 			classBlock = 'bot-block'
 		}
-		var userBlock = '<div id="text-block"><span id="block" class="' + classBlock + '">' + text +'</span></div>'
-
+		var userBlock = '<div id="text-block" class="text-block"><span id="block" class="' + classBlock + ' _block">' + text +'</span></div>';
+		$('#chat-content').append(userBlock);
 	}
 
 	$('#click-chat-header').click(function(){
@@ -25,8 +27,14 @@ $(document).ready(function(){
 		}
 	});
 
+	$('#btn-text').click(function(){
+		var userText = $('input[name="user-input"]').val();
+		addText(userText,'user');
+	});
+
 
 	
 
-setTimeout(sideChat, 2000, '0px');
+	setTimeout(sideChat, 2000, '0px');
+	setTimeout(addText, 4000, textBot[0], 'bot');
 });

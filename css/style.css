@@ -40,8 +40,8 @@ a.click-chat-header {
 
 .bot-status {
 	position: absolute;
-	top: 47px;
-	left: 40px;
+	top: 50px;
+	left: 43px;
 	content: " ";
 	z-index: 10;
 	width:10px;
@@ -65,12 +65,47 @@ a.click-chat-header {
 }
 
 .chat-main {
-	width: 250px;
+	width: 255px;
 	height: 280px;
 	background-color: #fff;
 	padding: 10px;
+	padding-left: 5px;
 	border-radius: 2px;
 }
+
+.chat-content {
+	padding: 0;
+	background-color: transparent;
+}
+
+.text-block {
+	float: left;
+	width: 240px;
+	padding: 10px;
+	font-size: 0.8em;
+}
+
+.user-block {
+	display: block;
+	float: left;
+	width: 150px;
+	background-color: #009688;
+	color: #fff;
+}
+
+.bot-block {
+	display: block;
+	float: right;
+	width: 150px;
+	background-color: #f0f0f0;
+	color: #009688;
+}
+
+._block {
+	padding: 5px;
+	border-radius: 2px;
+}
+
 
 .chat-input {
 	width: 270;
@@ -101,10 +136,6 @@ a.click-chat-header {
 	background-color: #fff;
 	border-radius: 1px;
 }
-
-
-
-
 
 .clear {
 	clear: both;
